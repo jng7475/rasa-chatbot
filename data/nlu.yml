@@ -89,3 +89,10 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: blood_type_question
+  examples: |
+    - how many types of blood are there ?
+    - groups of blood
+    - blood type
+    - blood
