@@ -28,3 +28,8 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: basic_blood_questions
+  steps:
+  - intent: blood_type_question
+  - action: utter_blood_type_question
