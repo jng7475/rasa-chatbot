@@ -1,38 +1,84 @@
 version: "3.0"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - blood_type_question
-
+  - chao
+  - tam_biet
+  - nhom_mau
+  - thong_tin_ca_nhan
+  - lua_dao
+  - tai_sao_phai_hien_mau
+  - hien_mau_co_hai_khong
+  - quyen_loi_hien_mau
+  - luu_y_hien_mau
+  - thoi_gian_hien_mau
+  - lay_nhiem_sau_hien_mau
+  - quy_trinh
+  - dieu_kien_hien_mau
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_chao:
+  - text: "Xin chào. Tôi là trợ lý của bạn. Hãy thoải mái chia sẽ bất kỳ thắc mắc gì của bạn và tôi sẽ giải đáp"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_tam_biet:
+  - text: "Cảm ơn bạn đã chia sẽ băn khoăn của mình. Hãy gặp lại tôi bất cứ khi nào bạn cần nhé!"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_nhom_mau:
+  - text: "Hiện nay các nhà khoa học đã xác định được khoảng 30 hệ nhóm máu khác nhau của hồng cầu với 300 kháng nguyên.
+           Trong khoảng 30 hệ nhóm máu khác nhau được xác định thì hệ nhóm máu ABO và Rh D là hai hệ chính và rất quan trọng vì có tính sinh miễn dịch cực mạnh.
+           Theo đó, có Hệ ABO có 4 nhóm máu: A, B, AB và O. Hệ Rh có 2 nhóm máu thường gặp là Rh(D) dương và Rh(D) âm, hay còn gọi là Rh(D)+ và Rh(D)-
+           Chỉ tính riêng 2 hệ nhóm máu ABO và hệ Rh, đã có 8 nhóm máu phổ biến như: A+; A-; B+; B-; AB+; AB-; O+; O-"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_thong_tin_ca_nhan:
+  - text: "Thông tin cá nhân của người dùng được hệ thống và bệnh viện bảo mật tuyệt đối."
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_lua_dao:
+  - text: "Hệ thống ứng dụng của chúng tôi là nơi liên kết của các bệnh viện có mong muốn được tìm người hiến máu, vì vậy được đảm bảo về mặt pháp lý, có cơ quan thanh tra y tế kiểm soát chặt chẽ. Sẽ không có trường hợp sử dụng nguồn máu được hiến tặng để đem đi mua báo bất hợp pháp."
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_tai_sao_phai_hien_mau:
+  - text: "Máu cần cho cấp cứu và điều trị hằng ngày như khi bị mất máu (do tai nạn, chiến tranh, do các tai biến sản khoa, xuất huyết…); hoặc các trường hợp phẫu thuật ngoại khoa, sản khoa, các kỹ thuật cao như: chạy thận nhân tạo, ghép tạng hoặc các bệnh nhân bị bệnh về máu như: ung thư máu, suy tuỷ xương, …
+           Máu là một loại thuốc không thể thiếu, nếu không được truyền máu đồng nghĩa với việc chấm dứt cuộc sống của họ. Hiến máu giúp cứu một đời người, mang lại niềm tin và hy vọng cho những tình cảnh khốn khổ! Một giọt máu cho đi, một cuộc đời ở lại!"
 
-  utter_blood_type_question:
-  - text: "there are 8 blood groups"
+  utter_hien_mau_co_hai_khong:
+  - text: "Hiến máu theo đúng hướng dẫn của thầy thuốc hoàn toàn không có hại tới sức khỏe, điều đó được giải thích bằng các cơ sở khoa học và thực tiễn.
+          Sau khi HM, các chỉ số mạch, huyết áp, cân nặng,... cũng như các xét nghiệm về số lượng hồng cầu, ... gần như không thay đổi.
+          Mỗi năm, trên thế giới có trên 90 triệu người HM; nước ta có gần 1 triệu người HM. Rất nhiều người đã HM trên 100 lần, sức khỏe hoàn toàn bình thường
+          Ngược lại, hiến máu còn có nhiều lợi ích về mặt sức khỏe và quyền lợi khác. Hãy Tiếp tục hỏi tôi để biết rõ hơn"
+
+  utter_quyen_loi_hien_mau:
+  - text: "Mục đích cao cả của hiến máu là để cứu chữa người bệnh. Tuy nhiên, bạn vẫn nhận được các quyền lợi như:
+          - Được ghi nhận, tôn vinh. Nhận giấy chứng nhận hiến máu nhân đạo (có giá trị bồi hoàn lượng máu đã hiến ở các bv công lập toàn quốc
+          - Được khám, tư vấn sức khỏe, được xét nghiệm miễn phí để xác định nhóm máu và các xét nghiệm sàng lọc khác như HIV, viêm gan B, viêm gan C, giang mai, sốt rét.
+          - Được bồi dưỡng nước uống, ăn nhẹ. Hỗ trợ tiền mặt và quà tặng trị giá 100k-180k"
+
+  utter_luu_y_hien_mau:
+  - text: "- Ngày hôm trước khi HM: nên ăn uống, nghỉ ngơi đầy đủ; tránh làm việc quá sức, thức đêm, bỏ ăn, say rượu... gây mệt mỏi, căng thẳng trước khi HM.
+    - Ngày HM: ăn nhẹ trước khi HM 1 giờ-2 giờ, không ăn thức ăn nhiều mỡ, không uống rượu; mang theo chứng minh nhân dân.
+    - Tại điểm HM: thực hiện đúng hướng dẫn của Ban tổ chức và nhân viên y tế, chỉ rời khỏi điểm HM khi cảm thấy mình hoàn toàn bình thường.
+    - Sau khi HM: trong 3 ngày đầu, cần giữ sạch nơi chọc ven; không làm việc quá sức, tránh làm những việc đặc biệt nguy hiểm, không say rượu; cần ăn uống và nghỉ ngơi đầy đủ; liên hệ với cơ sở truyền máu khi thấy có những bất thường về sức khỏe."
+
+  utter_thoi_gian_hien_mau:
+  - text: "Nếu bạn thực sự khoẻ mạnh, bạn có thể hiến máu nhắc lại nhiều lần.
+          Thời gian nhắc lại đối với nam là 03 tháng (04 lần/năm), nữ là 04 tháng (03 lần/1 năm)."
+
+  utter_lay_nhiem_sau_hien_mau:
+  - text: "Bạn sẽ không mắc bất kỳ bệnh nào khi hiến máu vì kim tiêm là vô trùng và chỉ dùng một lần cho mỗi người hiến máu.
+           Khi kim vào vị trí, người hiến máu sẽ có cảm giác thoải mái và không hề đau đớn. Sau khi hiến máu, có thể bị đau tại vị trí kim đâm vào. Một số người bị bầm tím, nhưng điều này thường vô hại và chúng thường biến mất sau vài ngày"
+
+  utter_quy_trinh:
+  - text: "Quy trình HM có 5 bước cơ bản:
+    - Tư vấn và đăng kí hiến máu;
+    - Khám tuyển chọn;
+    - Xét nghiệm trước HM;
+    - Hiến máu;
+    - Nghỉ ngơi, ăn nhẹ, nhận quà tặng và Giấy chứng nhận HM."
+
+  utter_dieu_kien_hien_mau:
+  - text: "-Tuổi từ 18 - 60 (đối với nam và nữ);
+          - Cân nặng: từ 42kg trở lên đối với nữ và từ 45kg trở lên đối với nam.
+          - Không bị mắc hoặc có các hành vi nguy cơ cao lây nhiễm HIV và các bệnh lây truyền khác qua đường máu như: viêm gan B, viêm gan C, giang mai, sốt rét.
+          - Có giấy tờ tuỳ thân, địa chỉ liên hệ rõ ràng."
+
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
