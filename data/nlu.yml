@@ -1,98 +1,102 @@
 version: "3.0"
 
 nlu:
-- intent: greet
+- intent: chao
   examples: |
-    - hey
-    - hello
+    - xin chao
+    - toi muon hoi mot cau
+    - .
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
 
-- intent: goodbye
+- intent: tam_biet
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - oke, tôi đã rõ
+    - cảm ơn bạn
+    - tôi đã hiểu
+    - tạm biệt
     - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - ok
 
-- intent: affirm
+- intent: nhom_mau
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Có bao nhiêu nhóm máu ?
+    - nhóm máu
 
-- intent: deny
+- intent: thong_tin_ca_nhan
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Thông tin cá nhân tôi được bảo mật như thế nào?
+    - Bệnh viện có biết thông tin cá nhân của tôi không?
 
-- intent: mood_great
+- intent: lua_dao
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - Làm sao tôi tin được các tổ chức hiến máu?
+    - Lỡ bệnh viện làm giả buổi hiến máu để đem bán thì sao
+    - Ai chứng thực cho các buổi hiến máu
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
-- intent: bot_challenge
+- intent: tai_sao_phai_hien_mau
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - truyền máu quan trọng như thế nào?
+    - Hiến máu cần thiết như thế nào trong cuộc sống
+    - Hiến máu có an toàn không ?
 
-- intent: blood_type_question
+- intent: hien_mau_co_hai_khong
   examples: |
-    - how many types of blood are there ?
-    - groups of blood
-    - blood type
-    - blood
+    - Hiến máu nhiều có hại cho cơ thể không ?
+    - Tác hại của việc hiến máu.
+    - Hiến máu sẽ ảnh hưởng gì đến cơ thể .
+    - Sau khi hiến máu tôi nên làm gì ?
+    - Tôi sợ hiến máu
+    - Nghe nói hiến máu nguy hiểm
+    - Hiến máu có hại
+    - Tử vong do hiến máu
+
+- intent: quyen_loi_hien_mau
+  examples: |
+    - Tôi sẽ được gì khi hiến máu?
+    - Tôi có được tôn vinh và ghi nhận khi đi hiến máu không?
+    - Tôi có phải chi trả tiền khám sức khoẻ trước khi hiến máu không?
+    - Hiến máu xong tôi có được lợi ích gì ?
+    - Tôi có được nhận giấy chứng nhận sau khi hiến máu không ?
+    - Hiến máu được gì
+    - Nhận được gì từ hiến máu
+
+- intent: luu_y_hien_mau
+  examples: |
+    - Trước khi hiến máu tôi phải chuẩn bị như thế nào ?
+    - Sau khi hiến máu tôi cần làm gì ?
+    - Nếu hiến máu xong tôi bị đau đầu / chóng mặt / hoa mắt thì cần làm gì ?
+    - Những lưu ý khi đi hiến máu
+    - Cần lưu ý điều gì khi hiến máu
+    - Trước hiến máu gần chuẩn bị những gì
+
+- intent: thoi_gian_hien_mau
+  examples: |
+    - Tôi đã từng hiến máu, tôi có thể tiếp tục hiến máu được không?
+    - Hiến máu bao lâu thì đc hiến lại
+    - Thời gian giữa hai lần hiến máu là bao nhiêu
+
+- intent: lay_nhiem_sau_hien_mau
+  examples: |
+    - Tôi có thể bị lây nhiễm không
+    - Tôi có bị nhiễm HIV sau hiến máu không
+    - Lây nhiễm
+
+- intent: quy_trinh
+  examples: |
+    - Tôi có cần phải xét nghiệm trước khi hiến máu không ?
+    - Đăng kí hiến máu gồm những bước cơ bản nào?
+    - Trước khi hiến máu tôi cần phải chuẩn bị gì và làm gì ?
+    - Có ai tư vấn cho tôi trước khi hiến máu không
+    - Hiến máu có tốn nhiều thời gian không ?
+
+- intent: dieu_kien_hien_mau
+  examples: |
+    - Từ bao nhiêu tuổi thì có thể hiến máu?
+    - Tôi 40kg có thể hiến máu không ?
+    - Đã từng nhiễm covid có được hiến máu không ?
+    - Viêm gan không thể hiến máu đúng không ?
+    - Tôi đang sử dụng thuốc có được hiến máu không ?
+    - Tôi đang ăn chay có được hiến máu không ?
+    - Tôi không có dư máu, hoặc có thể bị thiếu máu, vậy tôi có tham gia hiến máu được không?
