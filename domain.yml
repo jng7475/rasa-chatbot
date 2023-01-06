@@ -14,6 +14,8 @@ intents:
   - lay_nhiem_sau_hien_mau
   - quy_trinh
   - dieu_kien_hien_mau
+  - tang_can_sau_hien_mau
+
 responses:
   utter_chao:
   - text: "Xin chào. Tôi là trợ lý của bạn. Hãy thoải mái chia sẽ bất kỳ thắc mắc gì của bạn và tôi sẽ giải đáp"
@@ -60,8 +62,7 @@ responses:
           Thời gian nhắc lại đối với nam là 03 tháng (04 lần/năm), nữ là 04 tháng (03 lần/1 năm)."
 
   utter_lay_nhiem_sau_hien_mau:
-  - text: "Bạn sẽ không mắc bất kỳ bệnh nào khi hiến máu vì kim tiêm là vô trùng và chỉ dùng một lần cho mỗi người hiến máu.
-           Khi kim vào vị trí, người hiến máu sẽ có cảm giác thoải mái và không hề đau đớn. Sau khi hiến máu, có thể bị đau tại vị trí kim đâm vào. Một số người bị bầm tím, nhưng điều này thường vô hại và chúng thường biến mất sau vài ngày"
+  - text: "Không. Bạn sẽ không mắc bất kỳ bệnh nào khi hiến máu vì kim tiêm là vô trùng và chỉ dùng một lần cho mỗi người hiến máu."
 
   utter_quy_trinh:
   - text: "Quy trình HM có 5 bước cơ bản:
@@ -76,6 +77,11 @@ responses:
           - Cân nặng: từ 42kg trở lên đối với nữ và từ 45kg trở lên đối với nam.
           - Không bị mắc hoặc có các hành vi nguy cơ cao lây nhiễm HIV và các bệnh lây truyền khác qua đường máu như: viêm gan B, viêm gan C, giang mai, sốt rét.
           - Có giấy tờ tuỳ thân, địa chỉ liên hệ rõ ràng."
+
+  utter_tang_can_sau_hien_mau:
+  - text: "Hiến máu chắc chắn sẽ không làm bạn tăng cân. Một số ít trường hợp, nhất là nữ sau khi hiến máu có khuynh hướng lên cân.
+           Vì sau khi cho máu sự tái tạo máu làm cho cơ thể phấn chấn, ăn ngon, ngủ ngon.
+           Bạn nên có chế độ ăn uống vừa phải, ít ngọt, ít béo, tập thể dục, thể thao đều đặn thì thể trọng và thể hình sẽ cân đối theo ý muốn."
 
 
 session_config:
