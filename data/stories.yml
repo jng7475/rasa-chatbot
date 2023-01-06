@@ -88,6 +88,11 @@ stories:
     - intent: dieu_kien_hien_mau
     - action: utter_dieu_kien_hien_mau
 
+- story: tang_can_sau_hien_mau
+  steps:
+    - intent: tang_can_sau_hien_mau
+    - action: utter_tang_can_sau_hien_mau
+
 
 
 

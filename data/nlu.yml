@@ -18,6 +18,12 @@ nlu:
     - goodbye
     - ok
 
+- intent: tang_can_sau_hien_mau
+  examples: |
+    - Sau khi hiến máu liệu tôi sẽ tăng cân không?
+    - Có béo hơn
+    - Mập hơn sau hiến máu
+
 - intent: nhom_mau
   examples: |
     - Có bao nhiêu nhóm máu ?
@@ -82,6 +88,8 @@ nlu:
     - Tôi có thể bị lây nhiễm không
     - Tôi có bị nhiễm HIV sau hiến máu không
     - Lây nhiễm
+    - Tôi sợ bị
+    - Tôi có khả năng bị nhiễm bệnh sau khi hiến máu?
 
 - intent: quy_trinh
   examples: |
@@ -90,6 +98,7 @@ nlu:
     - Trước khi hiến máu tôi cần phải chuẩn bị gì và làm gì ?
     - Có ai tư vấn cho tôi trước khi hiến máu không
     - Hiến máu có tốn nhiều thời gian không ?
+
 
 - intent: dieu_kien_hien_mau
   examples: |
@@ -100,3 +109,5 @@ nlu:
     - Tôi đang sử dụng thuốc có được hiến máu không ?
     - Tôi đang ăn chay có được hiến máu không ?
     - Tôi không có dư máu, hoặc có thể bị thiếu máu, vậy tôi có tham gia hiến máu được không?
+    - Nữ bao nhiêu là được hiến máu
+    - Nam bao nhiêu là được hiến máu
